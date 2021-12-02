@@ -5,7 +5,7 @@
 # Add a package. Pass the name of the new package.
 add_package() {
     package=$1
-    cargo add ${package}
+    cargo init ${package}
     update_toml
 }
 
